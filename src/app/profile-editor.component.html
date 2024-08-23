@@ -1,0 +1,8 @@
+<form ngForm
+      method="POST" action="http://localhost:8081/my-form">
+  <label for="jwe">JWE VALUE: </label>
+  <input name="jwe" id="jwe" type="text" [value]="jwe" >
+
+  <p>Complete the form to enable button.</p>
+  <button onclick="submit()" type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
